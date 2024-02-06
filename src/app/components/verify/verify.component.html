@@ -2,7 +2,8 @@
   <div class="border border-muted rounded py-3 px-3 w-50 ctr-content">
 
     <header class="text-center">
-      <h4 class="fw-bold">Almost done</h4>
+      <button type="button" class="float-end btn-close" aria-label="Close"></button>
+      <h4 class="fw-bold fs-1">Almost done</h4>
       <span class="sub-title">Please enter the code below to validate your account</span>
     </header>
 
@@ -28,9 +29,13 @@
         </div>
       </div>
 
-      <div class="d-grid gap-2 mt-5">
-        <input type="button" routerLink="" value="VERIFY" class="btn btn-danger" />
+      <div class="text-center">
+        <div class="d-grid gap-2 mt-5">
+          <input type="button" value="Verify" (click)="say()" class="btn btn-danger" />
+        </div>
+        <p class="mt-5"><a class="text-muted small" routerLink="">Contact Support</a></p>
       </div>
+
     </form>
   </div>
 

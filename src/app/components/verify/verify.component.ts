@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrl: './verify.component.scss'
 })
 export class VerifyComponent {
+  say() {
+    alert('Oops!: This need some server logic')
+  }
 
 }
